@@ -1,0 +1,17 @@
+---
+const path = import.meta.env.PUBLIC_URL;
+const {item} = Astro.props;
+---
+
+<li>
+    <a class={item.additional && item.additional[0] === "Deep Blue Collection" ? "card card--collection" : "card"}
+       href={`${path}${item.id}`}>
+        <div class="card__container">
+            <span class="card__collection">Deep Blue Collection</span>
+            <img class="card__image" src=`${path}assets/img/items/${item.id}.png` alt=`${item.title}`>
+        </div>
+        <div class="card__info">
+            <h3 class="card__title">{item.title}</h3>
+        </div>
+    </a>
+</li>

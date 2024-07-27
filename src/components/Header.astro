@@ -1,0 +1,411 @@
+---
+const path = import.meta.env.PUBLIC_URL;
+const { isMain } = Astro.props;
+---
+
+<header class={isMain === true ? `mobile-header` : `mobile-header headerNotMain`}>
+    <div class="mobile-header__intro">
+        <button type="button" class="mobile-header__open-button">
+            <span></span>
+        </button>
+        <a href=`${path}` class="mobile-header__logo-link">
+            <svg xmlns="http://www.w3.org/2000/svg" width="106" height="24">
+                <path d="M.2 24h24.285V0H.2v24ZM15.765 1.833c4.293 1.39 7.395 5.412 7.407 10.161.011 4.674-3.029 8.685-7.407 10.166V1.833Zm-3.427-.544c.776 0 1.602.102 2.29.238 0 5.437-5.322 9.912-10.813 9.912l-2.297-.003c.377-5.574 5.044-10.147 10.82-10.147ZM3.817 12.571c5.491 0 10.81 4.47 10.81 9.902-.687.138-1.554.241-2.289.241C6.56 22.706 1.734 18.12 1.516 12.571h2.3ZM32.43 14.11v-1.513h5.054v-1.928h-5.055V7.86h5.377V5.937h-7.444v8.085c0 2.043.88 3.443 2.948 3.73.042.01.081.018.12.018h.038c.211.023.429.04.655.04h3.828v-1.922h-3.81c-.66 0-1.71-.32-1.71-1.778ZM39.42 11.547v6.265h2.067V5.933H39.42v5.614ZM47.421 8.952c-2.616 0-4.572 1.78-4.572 4.552v.07c0 2.704 1.888 4.45 4.625 4.45 1.317 0 2.547-.36 3.674-1.54l-1.247-1.2c-.658.651-1.3.993-2.357.993-1.54 0-2.563-.89-2.633-2.26h6.79c.035-.342.035-.72.035-.72 0-2.412-1.715-4.345-4.315-4.345Zm-2.458 3.628c.087-1.045 1.16-1.883 2.46-1.883 1.213 0 2.2.856 2.2 1.883h-4.66ZM57.55 10.783c.936 0 1.629.342 2.217.942l1.282-1.32c-1.004-1.06-2.201-1.489-3.5-1.489-2.632 0-4.746 1.935-4.746 4.57 0 2.637 2.113 4.572 4.747 4.572 1.3 0 2.495-.43 3.499-1.49l-1.282-1.319c-.588.6-1.281.941-2.217.941-1.524 0-2.686-1.146-2.686-2.705.002-1.555 1.162-2.702 2.686-2.702ZM64.406 14.112h-.002v-3.031h1.883V9.223h-1.88V5.935h-2.069v8.299h.007c.06 1.93.947 3.244 2.944 3.521.041.01.081.018.12.018h.037c.212.023.43.04.655.04h.22l.008-1.922h-.21c-.66 0-1.713-.322-1.713-1.779ZM70.08 10.5V9.223h-2.052V17.812h2.052v-4.516c0-1.414.914-2.301 2.345-2.301.328 0 .622.034.863.085V9.103a4.545 4.545 0 0 0-.62-.051c-1.243 0-2.174.563-2.588 1.448ZM78.347 8.968c-2.639 0-4.743 1.976-4.743 4.55 0 2.572 2.104 4.549 4.743 4.549 2.621 0 4.742-1.977 4.742-4.55 0-2.573-2.12-4.549-4.742-4.549Zm0 7.241c-1.534 0-2.689-1.175-2.689-2.691 0-1.518 1.155-2.694 2.69-2.694 1.517 0 2.689 1.176 2.689 2.694 0 1.515-1.172 2.691-2.69 2.691ZM84.362 11.341v6.47h2.072V5.934h-2.072v5.407ZM93.896 14.216c0 1.363-.81 1.942-1.898 1.942-1.087 0-1.896-.58-1.896-1.925v-5.01h-2.088v5.181c0 2.454 1.81 3.63 3.968 3.63 2.172 0 4-1.192 4-3.68V9.222h-2.086v4.992ZM103.812 15.065l-1.305-1.804 1.616-2.174 1.384-1.864h-2.258l-1.88 2.573-1.898-2.573h-2.24l1.284 1.737 1.715 2.318-1.796 2.475-1.498 2.058h2.226l2.207-3.034 2.207 3.034h2.224l-1.988-2.746Z"/>
+            </svg>
+        </a>
+    </div>
+    <div class="mobile-header__container">
+        <div class="mobile-header__content">
+            <a href=`${path}` class="mobile-header__content-logo-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="106" height="24" fill="#041E50">
+                    <path d="M.2 24h24.285V0H.2v24ZM15.765 1.833c4.293 1.39 7.395 5.412 7.407 10.161.011 4.674-3.029 8.685-7.407 10.166V1.833Zm-3.427-.544c.776 0 1.602.102 2.29.238 0 5.437-5.322 9.912-10.813 9.912l-2.297-.003c.377-5.574 5.044-10.147 10.82-10.147ZM3.817 12.571c5.491 0 10.81 4.47 10.81 9.902-.687.138-1.554.241-2.289.241C6.56 22.706 1.734 18.12 1.516 12.571h2.3ZM32.43 14.11v-1.513h5.054v-1.928h-5.055V7.86h5.377V5.937h-7.444v8.085c0 2.043.88 3.443 2.948 3.73.042.01.081.018.12.018h.038c.211.023.429.04.655.04h3.828v-1.922h-3.81c-.66 0-1.71-.32-1.71-1.778ZM39.42 11.547v6.265h2.067V5.933H39.42v5.614ZM47.421 8.952c-2.616 0-4.572 1.78-4.572 4.552v.07c0 2.704 1.888 4.45 4.625 4.45 1.317 0 2.547-.36 3.674-1.54l-1.247-1.2c-.658.651-1.3.993-2.357.993-1.54 0-2.563-.89-2.633-2.26h6.79c.035-.342.035-.72.035-.72 0-2.412-1.715-4.345-4.315-4.345Zm-2.458 3.628c.087-1.045 1.16-1.883 2.46-1.883 1.213 0 2.2.856 2.2 1.883h-4.66ZM57.55 10.783c.936 0 1.629.342 2.217.942l1.282-1.32c-1.004-1.06-2.201-1.489-3.5-1.489-2.632 0-4.746 1.935-4.746 4.57 0 2.637 2.113 4.572 4.747 4.572 1.3 0 2.495-.43 3.499-1.49l-1.282-1.319c-.588.6-1.281.941-2.217.941-1.524 0-2.686-1.146-2.686-2.705.002-1.555 1.162-2.702 2.686-2.702ZM64.406 14.112h-.002v-3.031h1.883V9.223h-1.88V5.935h-2.069v8.299h.007c.06 1.93.947 3.244 2.944 3.521.041.01.081.018.12.018h.037c.212.023.43.04.655.04h.22l.008-1.922h-.21c-.66 0-1.713-.322-1.713-1.779ZM70.08 10.5V9.223h-2.052V17.812h2.052v-4.516c0-1.414.914-2.301 2.345-2.301.328 0 .622.034.863.085V9.103a4.545 4.545 0 0 0-.62-.051c-1.243 0-2.174.563-2.588 1.448ZM78.347 8.968c-2.639 0-4.743 1.976-4.743 4.55 0 2.572 2.104 4.549 4.743 4.549 2.621 0 4.742-1.977 4.742-4.55 0-2.573-2.12-4.549-4.742-4.549Zm0 7.241c-1.534 0-2.689-1.175-2.689-2.691 0-1.518 1.155-2.694 2.69-2.694 1.517 0 2.689 1.176 2.689 2.694 0 1.515-1.172 2.691-2.69 2.691ZM84.362 11.341v6.47h2.072V5.934h-2.072v5.407ZM93.896 14.216c0 1.363-.81 1.942-1.898 1.942-1.087 0-1.896-.58-1.896-1.925v-5.01h-2.088v5.181c0 2.454 1.81 3.63 3.968 3.63 2.172 0 4-1.192 4-3.68V9.222h-2.086v4.992ZM103.812 15.065l-1.305-1.804 1.616-2.174 1.384-1.864h-2.258l-1.88 2.573-1.898-2.573h-2.24l1.284 1.737 1.715 2.318-1.796 2.475-1.498 2.058h2.226l2.207-3.034 2.207 3.034h2.224l-1.988-2.746Z"/>
+                </svg>
+            </a>
+            <nav class="mobile-header__nav">
+                <ul class="mobile-header__nav-list">
+                    <li class="mobile-header__nav-item mobile-header__nav-item--promo">
+                        <a href=`${path}collection` class="mobile-header__nav-link mobile-header__nav-link--promo">
+                            <img src=`${path}assets/img/new-icon.svg` width="22" height="22" alt="new">
+                            <span>Deep Blue Collection</span>
+                        </a>
+                    </li>
+                    <li class="mobile-header__nav-item mobile-header__nav-item--catalog">
+                        <a href=`${path}cooking` class="mobile-header__nav-link mobile-header__nav-link--catalog">
+                            <img src=`${path}assets/img/cutlery-icon.svg` width="22" height="22" alt="">
+                            <span>Cooking</span>
+                            <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                 height="10" alt="">
+                        </a>
+                    </li>
+
+                    <li class="mobile-header__nav-submenu">
+                        <ul class="mobile-header__nav-sublist">
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}cooking#ovens` class="mobile-header__nav-sublink">
+                                    Ovens
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}cooking#airFryers` class="mobile-header__nav-sublink">
+                                    Air Fryers
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}cooking#multiCookers` class="mobile-header__nav-sublink">
+                                    Multi-Cookers
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}cooking#toasters` class="mobile-header__nav-sublink">
+                                    Toasters
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}cooking#grill` class="mobile-header__nav-sublink">
+                                    Grill
+                                </a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+
+                    <li class="mobile-header__nav-item mobile-header__nav-item--catalog">
+                        <a href=`${path}preparation` class="mobile-header__nav-link mobile-header__nav-link--catalog">
+                            <img src=`${path}assets/img/mixer-icon.svg` width="22" height="22" alt="">
+                            <span>Preparation</span>
+                            <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                 height="10" alt="">
+                        </a>
+                    </li>
+
+                    <li class="mobile-header__nav-submenu">
+                        <ul class="mobile-header__nav-sublist">
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}preparation#blender` class="mobile-header__nav-sublink">
+                                    Blender
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}preparation#mixer` class="mobile-header__nav-sublink">
+                                    Mixer
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-header__nav-item mobile-header__nav-item--catalog">
+                        <a href=`${path}coffee&tea` class="mobile-header__nav-link mobile-header__nav-link--catalog">
+                            <img src=`${path}assets/img/cup-icon.svg` width="22" height="22" alt="">
+                            <span>Coffee and Tea</span>
+                            <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                 height="10" alt="">
+                        </a>
+                    </li>
+
+                    <li class="mobile-header__nav-submenu">
+                        <ul class="mobile-header__nav-sublist">
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}coffee&tea#kettles` class="mobile-header__nav-sublink">
+                                    Kettles
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}coffee&tea#coffee-makers` class="mobile-header__nav-sublink">
+                                    Coffee Makers
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}coffee&tea#espresso-makers` class="mobile-header__nav-sublink">
+                                    Espresso Makers
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                            <li class="mobile-header__nav-subitem">
+                                <a href=`${path}coffee&tea#grinders` class="mobile-header__nav-sublink">
+                                    Grinders
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="mobile-header__nav-item" style="margin-top: 16px;">
+                        <a href=`${path}about` class="mobile-header__nav-link">
+                            About us
+                        </a>
+                    </li>
+                    <li class="mobile-header__nav-item">
+                        <a href=`${path}contacts` class="mobile-header__nav-link">
+                            Contacts
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="mobile-header__partner-list">
+                <li class="mobile-header__partner-item">
+                    <a href="https://cemglobal.com/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/cemglobal.png` width="104" height="39" alt="cemglobal">
+                    </a>
+                </li>
+                <!--<li class="mobile-header__partner-item">-->
+                <!--    <a href="#" class="mobile-header__partner-link">-->
+                <!--        <img src=`${path}assets/partners/electrolux.png` width="93" height="22" alt="Electrolux">-->
+                <!--    </a>-->
+                <!--</li>-->
+                <li class="mobile-header__partner-item">
+                    <a href="https://cemglobalfw.com/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/farberware.png` width="88" height="33" alt="Farberware">
+                    </a>
+                </li>
+                <li class="mobile-header__partner-item">
+                    <a href="https://continental.one/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/continental.png` width="88" height="33" alt="Continental">
+                    </a>
+                </li>
+                <li class="mobile-header__partner-item">
+                    <a href="https://www.collezioni.com/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/collezioni.png` width="88" height="33" alt="Collezioni">
+                    </a>
+                </li>
+                <li class="mobile-header__partner-item">
+                    <a href="https://proseries.one/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/proseries.png` width="88" height="33"
+                             alt="Professional Series">
+                    </a>
+                </li>
+                <li class="mobile-header__partner-item">
+                    <a href="https://ceconsumer.com/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/consumerelectronics.png` width="88" height="33"
+                             alt="Consumer Electronics">
+                    </a>
+                </li>
+                <li class="mobile-header__partner-item">
+                    <a href="https://americanoutdoors.life/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/americanoutdoors.png` width="88" height="33"
+                             alt="American Outdoors">
+                    </a>
+                </li>
+                <li class="mobile-header__partner-item">
+                    <a href="https://gymmaster.fitness/" class="mobile-header__partner-link">
+                        <img src=`${path}assets/partners/gymmaster.png` width="88" height="33" alt="Gym Master">
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <button type="button" class="mobile-header__close-button">
+        </button>
+    </div>
+</header>
+
+<header class={isMain === true ? `desktop-header` : `desktop-header headerNotMain`} id="desktopHeader">
+    <div class="desktop-header__partners">
+        <ul class="desktop-header__partner-list">
+            <li class="desktop-header__partner-item">
+                <a href="https://cemglobal.com/"  class="desktop-header__partner-link" style="opacity: 1">
+                    <img src=`${path}assets/partners/cemglobal.png` width="104" height="39" alt="cemglobal">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a class="desktop-header__partner-link" style="opacity: 1">
+                    <img src=`${path}assets/partners/electrolux.png` width="93" height="22" alt="Electrolux">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a href="https://cemglobalfw.com/" class="desktop-header__partner-link">
+                    <img src=`${path}assets/partners/farberware.png` width="88" height="33" alt="Farberware">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a href="https://continental.one/" class="desktop-header__partner-link">
+                    <img src=`${path}assets/partners/continental.png` width="88" height="33" alt="Continental">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a href="https://www.collezioni.com/" class="desktop-header__partner-link">
+                    <img src=`${path}assets/partners/collezioni.png` width="88" height="33" alt="Collezioni">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a href="https://proseries.one/" class="desktop-header__partner-link">
+                    <img src=`${path}assets/partners/proseries.png` width="88" height="33"
+                         alt="Professional Series">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a href="https://ceconsumer.com/" class="desktop-header__partner-link">
+                    <img src=`${path}assets/partners/consumerelectronics.png` width="88" height="33"
+                         alt="Consumer Electronics">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a href="https://americanoutdoors.life/" class="desktop-header__partner-link">
+                    <img src=`${path}assets/partners/americanoutdoors.png` width="88" height="33"
+                         alt="American Outdoors">
+                </a>
+            </li>
+            <li class="desktop-header__partner-item">
+                <a href="https://gymmaster.fitness/" class="desktop-header__partner-link">
+                    <img src=`${path}assets/partners/gymmaster.png` width="88" height="33" alt="Gym Master">
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="desktop-header__main">
+        <div class="desktop-header__main-container">
+            <span class="desktop-header__main-item desktop-header__main-item--products">
+                Products
+            </span>
+            <a href=`${path}` class="desktop-header__logo-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="144" height="33" fill="#fff">
+                    <path d="M.126 33h33.057V0H.126v33ZM21.314 2.52c5.844 1.91 10.066 7.441 10.082 13.972.016 6.427-4.122 11.942-10.082 13.979V2.52Zm-4.665-.747c1.056 0 2.18.14 3.118.327 0 7.475-7.245 13.629-14.72 13.629l-3.127-.005C2.434 8.06 8.787 1.773 16.649 1.773Zm-11.6 15.512c7.475 0 14.715 6.147 14.715 13.615-.934.19-2.115.332-3.115.332-7.867-.011-14.435-6.317-14.731-13.947h3.131ZM44 19.4v-2.08h6.878v-2.651h-6.88v-3.862h7.32V8.163H41.182V19.28c0 2.81 1.2 4.733 4.014 5.128a.71.71 0 0 0 .163.025h.052c.287.032.584.055.891.055h5.211v-2.643h-5.186c-.898 0-2.328-.44-2.328-2.445ZM53.514 15.877v8.615h2.815V8.158h-2.815v7.719ZM64.406 12.309c-3.561 0-6.224 2.448-6.224 6.26v.094c0 3.72 2.57 6.12 6.296 6.12 1.792 0 3.466-.494 5-2.118l-1.697-1.648c-.896.894-1.769 1.363-3.208 1.363-2.097 0-3.489-1.223-3.584-3.107h9.243c.047-.47.047-.989.047-.989 0-3.317-2.335-5.975-5.873-5.975Zm-3.346 4.988c.117-1.436 1.579-2.588 3.348-2.588 1.652 0 2.996 1.177 2.996 2.588H61.06ZM78.194 14.827c1.273 0 2.217.47 3.018 1.293l1.744-1.813c-1.366-1.459-2.995-2.048-4.762-2.048-3.584 0-6.462 2.66-6.462 6.285 0 3.624 2.876 6.284 6.462 6.284 1.769 0 3.396-.589 4.762-2.048l-1.744-1.813c-.801.824-1.745 1.294-3.018 1.294-2.075 0-3.657-1.576-3.657-3.72.003-2.138 1.582-3.714 3.657-3.714ZM87.526 19.404h-.002v-4.169h2.564v-2.554h-2.56v-4.52h-2.816v11.41h.009c.081 2.654 1.29 4.46 4.007 4.842.056.013.11.025.163.025h.052c.287.031.584.054.891.054h.299l.011-2.642h-.285c-.9 0-2.332-.443-2.332-2.446ZM95.25 14.438v-1.757h-2.793v11.811h2.794v-6.21c0-1.945 1.244-3.164 3.192-3.164.446 0 .846.047 1.174.117v-2.719a6.122 6.122 0 0 0-.844-.07c-1.692 0-2.959.775-3.522 1.992ZM106.504 12.331c-3.593 0-6.457 2.717-6.457 6.256 0 3.536 2.864 6.255 6.457 6.255 3.568 0 6.455-2.719 6.455-6.255 0-3.54-2.887-6.256-6.455-6.256Zm0 9.957c-2.088 0-3.66-1.617-3.66-3.701 0-2.087 1.572-3.704 3.66-3.704 2.066 0 3.661 1.617 3.661 3.704 0 2.084-1.595 3.7-3.661 3.7ZM114.692 15.594v8.896h2.819V8.158h-2.819v7.436ZM127.67 19.546c0 1.875-1.104 2.672-2.584 2.672-1.479 0-2.581-.797-2.581-2.647v-6.89h-2.842v7.125c0 3.374 2.464 4.99 5.401 4.99 2.957 0 5.446-1.639 5.446-5.06v-7.054h-2.84v6.864ZM141.168 20.714l-1.776-2.48 2.199-2.99 1.885-2.563h-3.075l-2.559 3.539-2.583-3.539h-3.05l1.749 2.39 2.335 3.186-2.446 3.403-2.039 2.83h3.03l3.004-4.171 3.005 4.17h3.027l-2.706-3.775Z"/>
+                </svg>
+            </a>
+            <a class="desktop-header__main-item" href=`${path}about`>
+                About Us
+            </a>
+            <a class="desktop-header__main-item" href=`${path}contacts` style="margin-left: 32px">
+                Contacts
+            </a>
+        </div>
+    </div>
+
+    <div class="desktop-header__menu">
+        <div class="desktop-header__menu-container">
+
+            <ul class="desktop-header__menu-category">
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}cooking` class="desktop-header__menu-link">
+                        <img src=`${path}assets/img/cutlery-icon.svg` width="22" height="22" alt="">
+                        <span>Cooking</span>
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}cooking#ovens` class="desktop-header__menu-link">
+                        Ovens
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}cooking#airFryers` class="desktop-header__menu-link">
+                        Air Fryers
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}cooking#multiCookers` class="desktop-header__menu-link">
+                        Multi-Cookers
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}cooking#toasters` class="desktop-header__menu-link">
+                        Toasters
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}cooking#grill` class="desktop-header__menu-link">
+                        Grill
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="desktop-header__menu-category">
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}preparation` class="desktop-header__menu-link">
+                        <img src=`${path}assets/img/mixer-icon.svg` width="22" height="22" alt="">
+                        <span>Preparation</span>
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}preparation#blender` class="desktop-header__menu-link">
+                        Blender
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}preparation#mixer` class="desktop-header__menu-link">
+                        Mixer
+                    </a>
+                </li>
+
+            </ul>
+
+            <ul class="desktop-header__menu-category">
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}coffee&tea` class="desktop-header__menu-link">
+                        <img src=`${path}assets/img/cup-icon.svg` width="22" height="22" alt="">
+                        <span>Coffee and Tea</span>
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}coffee&tea#kettles` class="desktop-header__menu-link">
+                        Kettles
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}coffee&tea#coffee-makers` class="desktop-header__menu-link">
+                        Coffee Makers
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}coffee&tea#espresso-makers` class="desktop-header__menu-link">
+                        Espresso Makers
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+                <li class="desktop-header__menu-item">
+                    <a href=`${path}coffee&tea#grinders` class="desktop-header__menu-link">
+                        Grinders
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
+                    </a>
+                </li>
+            </ul>
+
+            <a href=`${path}collection` class="desktop-header__menu-promo">
+                <div class="desktop-header__menu-promo-content">
+                    <h3>Meet our Deep Blue Collection</h3>
+                    <span>
+                    SEE ALL PRODUCTS
+                    <img src=`${path}assets/img/Arrow.svg` width="24"
+                         height="24" alt="">
+                    </span>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</header>

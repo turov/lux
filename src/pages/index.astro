@@ -1,0 +1,133 @@
+---
+import Layout from '../layouts/Layout.astro'
+const path = import.meta.env.PUBLIC_URL;
+---
+
+<Layout isMain={true}>
+    <section class="intro" id="top">
+        <div class="intro__container">
+            <h1>For better living</h1>
+            <a href="#promo">
+                SEE ALL PRODUCTS
+                <img src=`${path}assets/img/Arrow.svg` width="24"
+                     height="24" alt="">
+            </a>
+        </div>
+    </section>
+
+    <div class="promo" id="promo">
+        <div class="promo__container">
+            <a href=`${path}cooking` class="promo__item">
+                <span>Cooking</span>
+            </a>
+            <a href=`${path}preparation` class="promo__item">
+                <span>Preparation</span>
+            </a>
+            <a href=`${path}coffee&tea` class="promo__item">
+                <span>Coffee and Tea</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="main-collection">
+        <div class="main-collection__container">
+            <h2 class="main-collection__mobile-title">Deep Blue Collection</h2>
+            <img src=`${path}assets/img/timeless-collection.jpg` alt="">
+            <div class="main-collection__info">
+                <h2 class="main-collection__desktop-title">Deep Blue Collection</h2>
+                <p>Discover the elegance of the Deep Blue Collection, where classic design meets modern functionality.
+                    Our appliances, from advanced toasters with wide slots to programmable coffee makers, are engineered
+                    to enhance your kitchen's efficiency and style.</p>
+                <a href="#" class="button main-collection__button">See products</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="explore">
+        <div class="explore__container">
+            <h2>About Electrolux</h2>
+            <img class="explore__mobile-image" src=`${path}assets/img/explore-mobile.jpg` width="358" height="360" alt="">
+            <p>Electrolux creates sustainable, innovative kitchen appliances enhancing living, boosting efficiency, and
+                fostering wellbeing, driving long-term profitability through advanced, smart technology, designed for
+                every modern household.</p>
+            <a href=`${path}about`>
+                EXPLORE THE BRAND
+                <img src=`${path}assets/img/ArrowBlue.svg` width="24" height="24" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="slider">
+        <div class="slider__title-container">
+            <p class="slider__suptitle">NEW PRODUCTS</p>
+            <h2 class="slider__title">Productos Principales</h2>
+        </div>
+
+        <div class="slider-container">
+            <div class="swiper swiper1">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a href={`${path}EX-CM298`} class="product product--slide">
+                            <span class="product__special">NEW</span>
+                            <img class="product__image" src=`${path}assets/img/items/EX-CM298.png` alt="Digital Coffee Maker">
+                            <div class="product__info">
+                                <h3 class="product__title">Digital Coffee Maker</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href={`${path}EX-KE186`} class="product product--slide">
+                            <span class="product__special">NEW</span>
+                            <img class="product__image" src=`${path}assets/img/items/EX-KE186.png` alt="1.7 L Stainless Jug Kettle">
+                            <div class="product__info">
+                                <h3 class="product__title">1.7 L Stainless Jug Kettle</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href={`${path}EX-TT146`} class="product product--slide">
+                            <span class="product__special">NEW</span>
+                            <img class="product__image" src=`${path}assets/img/items/EX-TT146.png` alt="4 Slice Toaster">
+                            <div class="product__info">
+                                <h3 class="product__title">4 Slice Toaster</h3>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <a href={`${path}EX-AF268`} class="product product--slide">
+                            <span class="product__special">NEW</span>
+                            <img class="product__image" src=`${path}assets/img/items/EX-AF268.png`  alt="5.7L Digital Air Fryer">
+                            <div class="product__info">
+                                <h3 class="product__title">5.7L Digital Air Fryer</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="main-contacts">
+        <div class="main-contacts__container">
+            <p class="main-cotacts__suptitle">CONTACTS</p>
+            <h2 class="main-contacts__title">We are here for you</h2>
+            <div class="main-contacts__block">
+                <div class="main-contacts__info">
+                    <p>Find our contacts here</p>
+                    <a href=`${path}contacts`>
+                        CONTACT US
+                        <img src=`${path}assets/img/Arrow.svg` width="24"
+                             height="24" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</Layout>

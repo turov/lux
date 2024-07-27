@@ -1,0 +1,42 @@
+.slider {
+    padding: 32px 0;
+}
+
+.slider-container {
+    padding-left: 16px;
+}
+
+.slider__suptitle {
+    font-size: 16px;
+    line-height: 1;
+    font-weight: 600;
+    color: var(--color-blue-mod);
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0 16px;
+}
+
+.slider__title {
+    font-weight: 600;
+    margin: 0 16px 32px;
+    font-size: 28px;
+    text-align: center;
+    color: var(--color-blue);
+}
+
+@media (min-width: 1024px) {
+    .slider {
+        padding: 64px 16px 16px;
+    }
+
+    .slider-container {
+        padding: 0;
+        width: 1072px;
+        margin: 0 auto;
+    }
+
+    .slider__title {
+        font-size: 54px;
+        line-height: 1;
+    }
+}

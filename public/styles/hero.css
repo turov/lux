@@ -1,0 +1,110 @@
+.hero {
+    background-color: var(--color-blue);
+    background-size: cover;
+    background-position: center;
+    padding: 64px 16px 16px;
+    margin-top: 56px;
+}
+
+.hero--about {
+    background-image: url("../assets/img/explore.jpg");
+}
+
+.hero--contacts {
+    background-image: url("../assets/img/main-contacts.jpg");
+}
+
+.hero--cooking {
+    background-image: url("../assets/img/cooking.jpg");
+}
+
+.hero--preparation {
+    background-image: url("../assets/img/preparation.jpg");
+}
+
+.hero--coffee {
+    background-image: url("../assets/img/coffee.jpg");
+}
+
+.hero--collection {
+    background-image: url("../assets/img/bluecollection.jpg");
+}
+
+.hero__desktop-desk {
+    display: none;
+}
+
+.hero-mobile-desc {
+    padding: 16px;
+
+    p {
+        margin: 0;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .divider {
+        display: block;
+        background-color: var(--color-blue-tint);
+        height: 1px;
+        width: calc(100% - 32px);
+        margin: 48px auto 16px;
+    }
+}
+
+
+.hero__title {
+    margin: 0 0 16px;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-white);
+    text-align: center;
+}
+
+@media (min-width: 1024px) {
+    .hero--about,
+    .hero--contacts {
+        margin-top: 132px;
+        padding-top: 89px;
+        padding-bottom: 73px;
+    }
+
+    .hero--contacts {
+        background-position: center -61px;
+    }
+
+    .hero__title {
+        font-size: 54px;
+    }
+
+    .hero-mobile-desc {
+        display: none;
+    }
+
+    .hero__desktop-desk {
+        display: block;
+        margin: 0;
+        color: var(--color-white);
+        font-weight: 400;
+        font-size: 20px;
+        max-width: 928px;
+    }
+
+    .hero__container {
+        max-width: 1088px;
+        margin: 0 auto;
+    }
+
+    .hero--cooking,
+    .hero--preparation,
+    .hero--coffee,
+    .hero--collection {
+        margin-top: 132px;
+        padding-top: 125px;
+        padding-bottom: 125px;
+
+        .hero__title {
+            text-align: left;
+        }
+    }
+}

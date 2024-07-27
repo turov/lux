@@ -1,0 +1,40 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../data.json";
+import Card from "../components/Card.astro";
+const path = import.meta.env.PUBLIC_URL;
+---
+
+<Layout isMain={false}>
+    <div class="hero hero--collection" id="top">
+        <div class="hero__container">
+            <h2 class="hero__title">Deep Blue Collection</h2>
+            <p class="hero__desktop-desk">Electrolux offers a diverse range of product lines, spanning from Cook to
+                Care, catering to every aspect of enhancing your home. Electrolux, tailored for passionate home
+                enthusiasts, boasts luxurious design coupled with all the professional-grade features that discerning
+                users desire.</p>
+        </div>
+    </div>
+    <div class="hero-mobile-desc">
+        <p>Electrolux offers a diverse range of product lines, spanning from Cook to
+            Care, catering to every aspect of enhancing your home. Electrolux, tailored for passionate home
+            enthusiasts, boasts luxurious design coupled with all the professional-grade features that discerning
+            users desire.
+        </p>
+        <div class="divider"></div>
+    </div>
+
+    <section class="sub" id="blender">
+        <div class="sub__container">
+            <p class="sub__desc">
+            </p>
+            <ul class="sub__list">
+                {data.filter((item) => item.additional && item.additional[0] === "Deep Blue Collection").map((item) => (
+                        <Card item={item}></Card>
+                ))}
+            </ul>
+
+        </div>
+    </section>
+
+</Layout>

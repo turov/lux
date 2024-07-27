@@ -1,0 +1,23 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../data.json";
+const path = import.meta.env.PUBLIC_URL;
+
+export async function getStaticPaths() {
+    const posts = data;
+    return posts.map((item) => {
+        return {
+            params: {id: item.id},
+            props: {item}
+        };
+    });
+}
+const {id} = Astro.params;
+const {item} = Astro.props;
+---
+
+<Layout isMain={false}>
+    <div class="catalog" id="top">
+        <img src=`${path}assets/img/catalog/${id}.jpg` alt=`${item.title}` />
+    </div>
+</Layout>

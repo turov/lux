@@ -1,0 +1,112 @@
+---
+import Layout from "../layouts/Layout.astro";
+import data from "../data.json";
+import Card from "../components/Card.astro";
+const path = import.meta.env.PUBLIC_URL;
+---
+
+<Layout isMain={false}>
+    <div class="hero hero--cooking" id="top">
+        <div class="hero__container">
+            <h2 class="hero__title">Cooking</h2>
+            <p class="hero__desktop-desk">Electrolux offers a diverse range of product lines, spanning from Cook to
+                Care, catering to every aspect of enhancing your home. Electrolux, tailored for passionate home
+                enthusiasts, boasts luxurious design coupled with all the professional-grade features that discerning
+                users desire.</p>
+        </div>
+    </div>
+    <div class="hero-mobile-desc">
+        <p>Electrolux offers a diverse range of product lines, spanning from Cook to
+            Care, catering to every aspect of enhancing your home. Electrolux, tailored for passionate home
+            enthusiasts, boasts luxurious design coupled with all the professional-grade features that discerning
+            users desire.
+        </p>
+        <div class="divider"></div>
+    </div>
+
+    <section class="sub" id="ovens">
+        <div class="sub__container">
+            <h2 class="sub__title">Ovens</h2>
+            <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
+                catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
+                boasts luxurious design coupled with all the professional-grade features that discerning users
+                desire.
+            </p>
+            <ul class="sub__list">
+                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Ovens").map((item) => (
+                        <Card item={item}></Card>
+                ))}
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="sub" id="airFryers">
+        <div class="sub__container">
+            <h2 class="sub__title">Air Fryers</h2>
+            <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
+                catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
+                boasts luxurious design coupled with all the professional-grade features that discerning users
+                desire.
+            </p>
+            <ul class="sub__list">
+                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Air Fryers").map((item) => (
+                        <Card item={item}></Card>
+                ))}
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="sub" id="multiCookers">
+        <div class="sub__container">
+            <h2 class="sub__title">Multi-Cookers</h2>
+            <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
+                catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
+                boasts luxurious design coupled with all the professional-grade features that discerning users
+                desire.
+            </p>
+            <ul class="sub__list">
+                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Multi-Cookers").map((item) => (
+                        <Card item={item}></Card>
+                ))}
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="sub" id="toasters">
+        <div class="sub__container">
+            <h2 class="sub__title">Toasters</h2>
+            <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
+                catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
+                boasts luxurious design coupled with all the professional-grade features that discerning users
+                desire.
+            </p>
+            <ul class="sub__list">
+                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Toasters").map((item) => (
+                        <Card item={item}></Card>
+                ))}
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="sub" id="grill">
+        <div class="sub__container">
+            <h2 class="sub__title">Grill</h2>
+            <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
+                catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
+                boasts luxurious design coupled with all the professional-grade features that discerning users
+                desire.
+            </p>
+            <ul class="sub__list">
+                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Grill").map((item) => (
+                        <Card item={item}></Card>
+                ))}
+            </ul>
+
+        </div>
+    </section>
+
+</Layout>

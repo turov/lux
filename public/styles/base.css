@@ -1,0 +1,52 @@
+@font-face {
+    font-family: "Electrolux-Sans";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../assets/fonts/Electrolux Sans.woff") format("woff");
+}
+
+@font-face {
+    font-family: "Electrolux-Sans";
+    font-style: normal;
+    font-weight: 600;
+    src: url("../assets/fonts/Electrolux Sans Semibold.woff") format("woff");
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    font-family: "Electrolux-Sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    scroll-behavior: smooth;
+    font-size: 16px;
+    line-height: 1.2;
+    scroll-padding-top: 56px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main {
+    width: 100%;
+}
+
+@media (min-width: 1024px) {
+    html {
+        scroll-padding-top: 132px;
+    }
+}

@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro'
+const path = import.meta.env.PUBLIC_URL;
+---
+
+<Layout isMain="false">
+    <div class="hero hero--contacts" id="top">
+        <div class="hero__container">
+            <h2 class="hero__title">Contacts</h2>
+        </div>
+    </div>
+
+    <div class="contacts">
+        <div class="contacts__container">
+            <a href="mailto:info@cemglobal.com" class="contacts__item">
+                <img src=`${path}assets/img/mail-icon.svg` alt="">
+                <span>info@cemglobal.com</span>
+            </a>
+            <a href="tel:(305)3922200" class="contacts__item">
+                <img src=`${path}assets/img/phone-icon.svg` alt="">
+                <span>(305) 392-2200</span>
+            </a>
+        </div>
+    </div>
+
+</Layout>

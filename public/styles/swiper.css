@@ -1,0 +1,27 @@
+.swiper-pagination {
+    position: static;
+    left: unset;
+    top: unset;
+    bottom: unset;
+    right: unset;
+    transform: unset;
+    margin-top: 32px;
+}
+
+.swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    margin: 0 6px !important;
+    background: var(--color-blue-light);
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--color-blue);
+}
+
+@media (min-width: 1024px) {
+    .swiper-pagination {
+        display: none;
+    }
+}

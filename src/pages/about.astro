@@ -1,0 +1,70 @@
+---
+import Layout from '../layouts/Layout.astro'
+const path = import.meta.env.PUBLIC_URL;
+---
+
+<Layout isMain="false">
+    <div class="hero hero--about" id="top">
+        <div class="hero__container">
+            <h2 class="hero__title">About Electrolux</h2>
+        </div>
+    </div>
+
+    <section class="about-info">
+        <div class="about-info__container">
+            <h2>Brand story</h2>
+            <p>Electrolux, a Swedish globally active appliance manufacturer, has been enhancing home life for over a
+                century with innovative and durable home appliances. Their products, designed with classic Scandinavian
+                aesthetics, make sustainable living accessible for every household and are crafted with everyone in
+                mind.
+            </p>
+            <p>
+                Driving long-term profitability through sustainable consumer experiences is crucial. Their designs
+                enable users to enjoy superior-tasting food, extend the lifespan of clothing, and promote wellbeing at
+                home. By increasing operational efficiency via digital technologies, automation, and modular systems,
+                they aim to boost profitability and integrate sustainability into their core business strategy.
+            </p>
+            <div class="divider"></div>
+        </div>
+    </section>
+
+    <section class="about-desc">
+        <div class="about-desc__container">
+            <h2 class="about-desc__mobile-title">Kitchen appliances</h2>
+            <img src=`${path}assets/img/about-desc.jpg` alt=""/>
+            <div class="about-desc__desc">
+                <h2 class="about-desc__desktop-title">Kitchen appliances</h2>
+                <p>We focus on enhancing the value of our kitchen appliances by crafting designs that are based on
+                    thorough customer research and effectively meet their needs. Our commitment to delivering
+                    outstanding quality is unwavering, ensuring that each product we develop meets our high standards of
+                    customer satisfaction. From toasters to blenders, every item is designed with meticulous attention
+                    to detail, ensuring top-tier performance at every stage of development.
+                </p>
+                <p>
+                    Our diverse range of kitchen appliances is designed to improve every aspect of your culinary
+                    experience. Tailored for culinary enthusiasts who demand the best, our products feature luxurious
+                    designs and are equipped with professional-grade capabilities that meet the expectations of the most
+                    discerning users.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <div class="main-contacts">
+        <div class="main-contacts__container">
+            <p class="main-cotacts__suptitle">CONTACTS</p>
+            <h2 class="main-contacts__title">We are here for you</h2>
+            <div class="main-contacts__block">
+                <div class="main-contacts__info">
+                    <p>Find our contacts here</p>
+                    <a href="#">
+                        CONTACT US
+                        <img src=`${path}assets/img/Arrow.svg` width="24"
+                             height="24" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</Layout>
