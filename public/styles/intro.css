@@ -30,6 +30,17 @@
         text-decoration: none;
         color: var(--color-white);
 
+        i {
+            display: block;
+            border-top: 1px solid transparent;
+            border-bottom: 1px solid transparent;
+            transition: all 0.8s;
+        }
+
+        &:hover i {
+            border-bottom-color: var(--color-white);
+        }
+
         img {
             margin-left: 12px;
         }

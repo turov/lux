@@ -32,6 +32,17 @@
     justify-content: center;
     font-weight: 600;
 
+    i {
+        display: block;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        transition: all 0.8s;
+    }
+
+    &:hover i {
+        border-bottom-color: var(--color-blue);
+    }
+
     img {
         width: 24px;
         height: 24px;

@@ -34,7 +34,15 @@
     display: block;
     color: var(--color-white);
     text-decoration: none;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
+    width: fit-content;
+    border-bottom: 1px solid transparent;
+    border-top: 1px solid transparent;
+    transition: all 0.8s;
+
+    &:hover {
+        border-bottom-color: var(--color-white);
+    }
 
     &:nth-child(1) {
         font-weight: 600;
