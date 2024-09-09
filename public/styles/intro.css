@@ -1,7 +1,7 @@
 .intro {
     width: 100%;
     padding: 56px 16px 32px;
-    background-image: url("../assets/img/intro.jpg");
+    background-image: url("../assets/img/intro-new.jpg");
     min-height: 500px;
     display: flex;
     flex-direction: column;
@@ -52,6 +52,7 @@
         margin-top: 51px;
         padding: 77px 16px 215px;
         height: 600px;
+        background-position: center -90px;
 
         .intro__container {
             max-width: 1088px;
