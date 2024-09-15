@@ -24,16 +24,16 @@ const path = import.meta.env.PUBLIC_URL;
         <div class="divider"></div>
     </div>
 
-    <section class="sub" id="blender">
+    <section class="sub" id="blenders">
         <div class="sub__container">
-            <h2 class="sub__title">Blender</h2>
+            <h2 class="sub__title">Blenders</h2>
             <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
                 catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
                 boasts luxurious design coupled with all the professional-grade features that discerning users
                 desire.
             </p>
             <ul class="sub__list">
-                {data.filter((item) => item.category === "Preparation" && item.subcategory === "Blender").map((item) => (
+                {data.filter((item) => item.category === "Preparation" && item.subcategory === "Blenders").map((item) => (
                         <Card item={item}></Card>
                 ))}
             </ul>
@@ -41,16 +41,16 @@ const path = import.meta.env.PUBLIC_URL;
         </div>
     </section>
 
-    <section class="sub" id="mixer">
+    <section class="sub" id="mixers">
         <div class="sub__container">
-            <h2 class="sub__title">Mixer</h2>
+            <h2 class="sub__title">Mixers</h2>
             <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
                 catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
                 boasts luxurious design coupled with all the professional-grade features that discerning users
                 desire.
             </p>
             <ul class="sub__list">
-                {data.filter((item) => item.category === "Preparation" && item.subcategory === "Mixer").map((item) => (
+                {data.filter((item) => item.category === "Preparation" && item.subcategory === "Mixers").map((item) => (
                         <Card item={item}></Card>
                 ))}
             </ul>

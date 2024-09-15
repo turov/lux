@@ -1,146 +1,362 @@
 [
   {
-    "category": "Coffee and Tea",
-    "subcategory": "Kettles",
-    "id": "EX-KE176",
-    "title": "1.7 L Stainless Steel Kettle",
-    "additional": ["Deep Blue Collection"]
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM206",
+    "title": "Trieste Suprema Semi-Automatic Espresso Maker",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
   },
   {
-    "category": "Coffee and Tea",
-    "subcategory": "Kettles",
-    "id": "EX-KE186",
-    "title": "1.7 L Stainless Jug Kettle",
-    "additional": ["Deep Blue Collection"]
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM256",
+    "title": "One-Touch Latte Pro Espresso Maker",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
   },
   {
-    "category": "Coffee and Tea",
-    "subcategory": "Coffee Makers",
-    "id": "EX-CM166",
-    "title": "Programmable Coffee Maker",
-    "additional": ["Deep Blue Collection"]
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM206D",
+    "title": "La Slimmissima Compact Espresso",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-CE026",
+    "title": "Crema Prima Espresso Maker",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM208B",
+    "title": "Trieste Suprema Semi-Automatic Espresso Maker",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM259",
+    "title": "One-Touch Latte Pro Espresso Maker",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM209",
+    "title": "La Slimmissima Compact Espresso",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-CE029",
+    "title": "Crema Prima Espresso Maker",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM208S",
+    "title": "Trieste Suprema Semi-Automatic Espresso Maker",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM258",
+    "title": "One-Touch Latte Pro Espresso Maker",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-EM208",
+    "title": "La Slimmissima Compact Espresso",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Coffee",
+    "subcategory": "Brewing",
+    "id": "EX-CE028",
+    "title": "Crema Prima Espresso Maker",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
   },
   {
     "category": "Cooking",
-    "subcategory": "Grill",
-    "id": "EX-CG126",
-    "title": "Multi\u2011Use Electric Grill",
-    "additional": ["Deep Blue Collection"]
+    "subcategory": "Ovens",
+    "id": "EX-TO966",
+    "title": "Tri-Zone 32 Qt 14-in-1 French Door Oven",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
   },
   {
     "category": "Cooking",
-    "subcategory": "Toasters",
-    "id": "EX-TT146",
-    "title": "4 Slice Toaster",
-    "additional": ["Deep Blue Collection"]
+    "subcategory": "Ovens",
+    "id": "EX-AF316",
+    "title": "EZ Access 14 Qt Air Fry Oven",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
   },
   {
     "category": "Cooking",
-    "subcategory": "Toasters",
-    "id": "EX-TT126",
-    "title": "2 Slice Toaster",
-    "additional": ["Deep Blue Collection"]
+    "subcategory": "Air Fryers",
+    "id": "EX-AF266",
+    "title": "6 Qt Digital Air Fryer",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
   },
   {
     "category": "Cooking",
     "subcategory": "Air Fryers",
     "id": "EX-AF216",
     "title": "Air Fryer with 360°View",
-    "additional": ["Deep Blue Collection"]
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
   },
   {
     "category": "Cooking",
     "subcategory": "Ovens",
-    "id": "EX-AF316",
-    "title": "EZ Access 14\u00A0Qt Air\u00A0Fry\u00A0Oven",
-    "additional": ["Deep Blue Collection"]
+    "id": "EX-TO969",
+    "title": "Tri-Zone 32 Qt 14-in-1 French Door Oven",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
   },
   {
     "category": "Cooking",
     "subcategory": "Ovens",
-    "id": "EX-TO966",
-    "title": "Tri\u2011Zone 32 Qt\u201114in\u20111 French\u00A0Door\u00A0Oven",
-    "additional": ["Deep Blue Collection"]
-  },
-  {
-    "category": "Preparation",
-    "subcategory": "Mixer",
-    "id": "EX-SM066",
-    "title": "Planetary Stand Mixer",
-    "additional": ["Deep Blue Collection"]
-  },
-  {
-    "category": "Preparation",
-    "subcategory": "Blender",
-    "id": "EX-BL026",
-    "title": "Premium Performance Blender",
-    "additional": ["Deep Blue Collection"]
-  },
-  {
-    "category": "Cooking",
-    "subcategory": "Multi-Cookers",
-    "id": "EX-SC126",
-    "title": "6.3 Qt Multi\u2011Cooker",
-    "additional": ["Deep Blue Collection"]
-  },
-  {
-    "category": "Coffee and Tea",
-    "subcategory": "Espresso Makers",
-    "id": "EX-EM258",
-    "title": "Espresso Maker with Automatic Milk Frother"
-  },
-  {
-    "category": "Coffee and Tea",
-    "subcategory": "Espresso Makers",
-    "id": "EX-EM208",
-    "title": "Premium Espresso Maker with Grinder"
-  },
-  {
-    "category": "Coffee and Tea",
-    "subcategory": "Espresso Makers",
-    "id": "EX-CE028",
-    "title": "Espresso Maker"
-  },
-  {
-    "category": "Coffee and Tea",
-    "subcategory": "Coffee Makers",
-    "id": "EX-CM298",
-    "title": "Digital Coffee Maker"
-  },
-  {
-    "category": "Coffee and Tea",
-    "subcategory": "Grinders",
-    "id": "EX-CG028",
-    "title": "Conical Burr Grinder"
-  },
-  {
-    "category": "Coffee and Tea",
-    "subcategory": "Grinders",
-    "id": "EX-CG008",
-    "title": "Coffee Grinder"
+    "id": "EX-AF329-I6A",
+    "title": "EZ Access 14 Qt Air Fry Oven",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
   },
   {
     "category": "Cooking",
     "subcategory": "Air Fryers",
-    "id": "EX-AF218",
-    "title": "10.5 Qt Digital Air Fryer"
+    "id": "EX-AF269",
+    "title": "6 Qt Digital Air Fryer",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Air Fryers",
+    "id": "EX-AF219-I6A",
+    "title": "Air Fryer with 360°View",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Ovens",
+    "id": "EX-TO968-I6A",
+    "title": "Tri-Zone 32 Qt 14-in-1 French Door Oven",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Ovens",
+    "id": "EX-AF316S",
+    "title": "EZ Access 14 Qt Air Fry Oven",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
   },
   {
     "category": "Cooking",
     "subcategory": "Air Fryers",
     "id": "EX-AF268",
-    "title": "6 Qt Digital Air Fryer"
+    "title": "6 Qt Digital Air Fryer",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Air Fryers",
+    "id": "EX-AF216S",
+    "title": "Air Fryer with 360°View",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Multi-Cookers",
+    "id": "EX-PC126",
+    "title": "11 in 1 Multi Pressure Cooker with Air Fry",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Multi-Cookers",
+    "id": "EX-SC126",
+    "title": "6.3 Qt Multi-Cooker",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Grills",
+    "id": "EX-CG126",
+    "title": "Multi-Use Electric Grill",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Multi-Cookers",
+    "id": "EX-PC129",
+    "title": "11 in 1 Multi Pressure Cooker with Air Fry",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Multi-Cookers",
+    "id": "EX-SC129",
+    "title": "6.3 Qt Multi-Cooker",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Grills",
+    "id": "EX-CG128-I6A",
+    "title": "Multi-Use Electric Grill",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
   },
   {
     "category": "Cooking",
     "subcategory": "Multi-Cookers",
     "id": "EX-PC128",
-    "title": "12\u00A0in\u00A01 Multi Pressure Cooker with Air Fry"
+    "title": "11 in 1 Multi Pressure Cooker with Air Fry",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
   },
   {
     "category": "Cooking",
     "subcategory": "Multi-Cookers",
-    "id": "EX-PR338",
-    "title": "Electric Pressure Multi\u2011Cooker"
+    "id": "EX-SC126S",
+    "title": "6.3 Qt Multi-Cooker",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Cooking",
+    "subcategory": "Grills",
+    "id": "EX-CG178",
+    "title": "Multi-Use Electric Grill",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Blenders",
+    "id": "EX-BL036",
+    "title": "Hot & Cold Meal Prep Blender",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Blenders",
+    "id": "EX-BL026",
+    "title": "Premium Performance Blender",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Mixers",
+    "id": "EX-FP126",
+    "title": "Performance Food Processor",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Mixers",
+    "id": "EX-SM066",
+    "title": "Planetary Stand Mixer",
+    "additional": ["Dark Denim Collection"],
+    "class": "dark-denim"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Blenders",
+    "id": "EX-BL039",
+    "title": "Hot & Cold Meal Prep Blender",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Blenders",
+    "id": "EX-BL029",
+    "title": "Premium Performance Blender",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Mixers",
+    "id": "EX-FP129",
+    "title": "Performance Food Processor",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Mixers",
+    "id": "EX-SM069",
+    "title": "Planetary Stand Mixer",
+    "additional": ["Onix Black Collection"],
+    "class": "onix-black"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Blenders",
+    "id": "EX-BL038",
+    "title": "Hot & Cold Meal Prep Blender",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Blenders",
+    "id": "EX-BL028",
+    "title": "Premium Performance Blender",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Mixers",
+    "id": "EX-FP128",
+    "title": "Performance Food Processor",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
+  },
+  {
+    "category": "Preparation",
+    "subcategory": "Mixers",
+    "id": "EX-SM068",
+    "title": "Planetary Stand Mixer",
+    "additional": ["Stainless Steel Collection"],
+    "class": "steel"
   }
 ]

@@ -24,9 +24,9 @@ const { isMain } = Astro.props;
             <nav class="mobile-header__nav">
                 <ul class="mobile-header__nav-list">
                     <li class="mobile-header__nav-item mobile-header__nav-item--promo">
-                        <a href=`${path}collection` class="mobile-header__nav-link mobile-header__nav-link--promo">
+                        <a href=`${path}dark-denim-collection` class="mobile-header__nav-link mobile-header__nav-link--promo">
                             <img src=`${path}assets/img/new-icon.svg` width="22" height="22" alt="new">
-                            <span>Deep Blue Collection</span>
+                            <span>Dark Denim Collection</span>
                         </a>
                     </li>
                     <li class="mobile-header__nav-item mobile-header__nav-item--catalog">
@@ -62,15 +62,10 @@ const { isMain } = Astro.props;
                                 </a>
                             </li>
                             <li class="mobile-header__nav-subitem">
-                                <a href=`${path}cooking#toasters` class="mobile-header__nav-sublink">
-                                    Toasters
+                                <a href=`${path}cooking#grills` class="mobile-header__nav-sublink">
+                                    Grills
                                     <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                                          height="10" alt="">
-                                </a>
-                            </li>
-                            <li class="mobile-header__nav-subitem">
-                                <a href={`${path}EX-CG126`} class="mobile-header__nav-sublink">
-                                    Grill
                                 </a>
                             </li>
 
@@ -90,22 +85,26 @@ const { isMain } = Astro.props;
                     <li class="mobile-header__nav-submenu">
                         <ul class="mobile-header__nav-sublist">
                             <li class="mobile-header__nav-subitem">
-                                <a href={`${path}EX-BL026`}  class="mobile-header__nav-sublink">
-                                    Blender
+                                <a href=`${path}preparationg#blenders` class="mobile-header__nav-sublink">
+                                    Blenders
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
                                 </a>
                             </li>
                             <li class="mobile-header__nav-subitem">
-                                <a href={`${path}EX-SM066`}  class="mobile-header__nav-sublink">
-                                    Mixer
+                                <a href=`${path}preparationg#mixers` class="mobile-header__nav-sublink">
+                                    Mixers
+                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                                         height="10" alt="">
                                 </a>
                             </li>
                         </ul>
                     </li>
 
                     <li class="mobile-header__nav-item mobile-header__nav-item--catalog">
-                        <a href=`${path}coffee&tea` class="mobile-header__nav-link mobile-header__nav-link--catalog">
+                        <a href=`${path}coffee` class="mobile-header__nav-link mobile-header__nav-link--catalog">
                             <img src=`${path}assets/img/cup-icon.svg` width="22" height="22" alt="">
-                            <span>Coffee and Tea</span>
+                            <span>Coffee</span>
                             <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                                  height="10" alt="">
                         </a>
@@ -114,29 +113,8 @@ const { isMain } = Astro.props;
                     <li class="mobile-header__nav-submenu">
                         <ul class="mobile-header__nav-sublist">
                             <li class="mobile-header__nav-subitem">
-                                <a href=`${path}coffee&tea#kettles` class="mobile-header__nav-sublink">
-                                    Kettles
-                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                                         height="10" alt="">
-                                </a>
-                            </li>
-                            <li class="mobile-header__nav-subitem">
-                                <a href=`${path}coffee&tea#coffee-makers` class="mobile-header__nav-sublink">
-                                    Coffee Makers
-                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                                         height="10" alt="">
-                                </a>
-                            </li>
-                            <li class="mobile-header__nav-subitem">
-                                <a href=`${path}coffee&tea#espresso-makers` class="mobile-header__nav-sublink">
-                                    Espresso Makers
-                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                                         height="10" alt="">
-                                </a>
-                            </li>
-                            <li class="mobile-header__nav-subitem">
-                                <a href=`${path}coffee&tea#grinders` class="mobile-header__nav-sublink">
-                                    Grinders
+                                <a href=`${path}coffee#brewing` class="mobile-header__nav-sublink">
+                                    Brewing
                                     <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                                          height="10" alt="">
                                 </a>
@@ -320,15 +298,10 @@ const { isMain } = Astro.props;
                     </a>
                 </li>
                 <li class="desktop-header__menu-item">
-                    <a href=`${path}cooking#toasters` class="desktop-header__menu-link">
-                        Toasters
+                    <a href=`${path}cooking#grills` class="desktop-header__menu-link">
+                        Grills
                         <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                              height="10" alt="">
-                    </a>
-                </li>
-                <li class="desktop-header__menu-item">
-                    <a href={`${path}EX-CG126`} class="desktop-header__menu-link">
-                        Grill
                     </a>
                 </li>
 
@@ -345,13 +318,17 @@ const { isMain } = Astro.props;
                 </li>
                 <li class="desktop-header__menu-divider"></li>
                 <li class="desktop-header__menu-item">
-                    <a href={`${path}EX-BL026`} class="desktop-header__menu-link">
-                        Blender
+                    <a href=`${path}preparation#blenders` class="desktop-header__menu-link">
+                        Blenders
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
                     </a>
                 </li>
                 <li class="desktop-header__menu-item">
-                    <a href={`${path}EX-SM066`} class="desktop-header__menu-link">
-                        Mixer
+                    <a href=`${path}preparation#mixers` class="desktop-header__menu-link">
+                        Mixers
+                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
+                             height="10" alt="">
                     </a>
                 </li>
 
@@ -359,47 +336,26 @@ const { isMain } = Astro.props;
 
             <ul class="desktop-header__menu-category">
                 <li class="desktop-header__menu-item">
-                    <a href=`${path}coffee&tea` class="desktop-header__menu-link">
+                    <a href=`${path}coffee` class="desktop-header__menu-link">
                         <img src=`${path}assets/img/cup-icon.svg` width="22" height="22" alt="">
-                        <span>Coffee and Tea</span>
+                        <span>Coffee</span>
                         <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                              height="10" alt="">
                     </a>
                 </li>
                 <li class="desktop-header__menu-divider"></li>
                 <li class="desktop-header__menu-item">
-                    <a href=`${path}coffee&tea#kettles` class="desktop-header__menu-link">
-                        Kettles
-                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                             height="10" alt="">
-                    </a>
-                </li>
-                <li class="desktop-header__menu-item">
-                    <a href=`${path}coffee&tea#coffee-makers` class="desktop-header__menu-link">
-                        Coffee Makers
-                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                             height="10" alt="">
-                    </a>
-                </li>
-                <li class="desktop-header__menu-item">
-                    <a href=`${path}coffee&tea#espresso-makers` class="desktop-header__menu-link">
-                        Espresso Makers
-                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                             height="10" alt="">
-                    </a>
-                </li>
-                <li class="desktop-header__menu-item">
-                    <a href=`${path}coffee&tea#grinders` class="desktop-header__menu-link">
-                        Grinders
+                    <a href=`${path}coffee#brewing` class="desktop-header__menu-link">
+                        Brewing
                         <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                              height="10" alt="">
                     </a>
                 </li>
             </ul>
 
-            <a href=`${path}collection` class="desktop-header__menu-promo">
+            <a href=`${path}dark-denim-collection` class="desktop-header__menu-promo">
                 <div class="desktop-header__menu-promo-content">
-                    <h3>Meet our Deep Blue Collection</h3>
+                    <h3>Meet our Dark Denim Collection</h3>
                     <span>
                         <i>SEE ALL PRODUCTS</i>
                     <img src=`${path}assets/img/Arrow.svg` width="24"

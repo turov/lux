@@ -75,33 +75,16 @@ const path = import.meta.env.PUBLIC_URL;
         </div>
     </section>
 
-    <section class="sub" id="toasters">
+    <section class="sub" id="grills">
         <div class="sub__container">
-            <h2 class="sub__title">Toasters</h2>
+            <h2 class="sub__title">Grills</h2>
             <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
                 catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
                 boasts luxurious design coupled with all the professional-grade features that discerning users
                 desire.
             </p>
             <ul class="sub__list">
-                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Toasters").map((item) => (
-                        <Card item={item}></Card>
-                ))}
-            </ul>
-
-        </div>
-    </section>
-
-    <section class="sub" id="grill">
-        <div class="sub__container">
-            <h2 class="sub__title">Grill</h2>
-            <p class="sub__desc">Electrolux offers a diverse range of product lines, spanning from Cook to Care,
-                catering to every aspect of enhancing your home. Electrolux, tailored for passionate home enthusiasts,
-                boasts luxurious design coupled with all the professional-grade features that discerning users
-                desire.
-            </p>
-            <ul class="sub__list">
-                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Grill").map((item) => (
+                {data.filter((item) => item.category === "Cooking" && item.subcategory === "Grills").map((item) => (
                         <Card item={item}></Card>
                 ))}
             </ul>

@@ -4,10 +4,10 @@ const {item} = Astro.props;
 ---
 
 <li>
-    <a class={item.additional && item.additional[0] === "Deep Blue Collection" ? "card card--collection" : "card"}
+    <a class={item.class ? `card card--collection card--${item.class}` : "card"}
        href={`${path}${item.id}`}>
         <div class="card__container">
-            <span class="card__collection">Deep Blue Collection</span>
+            <span class="card__collection">{item.additional}</span>
             <img class="card__image" src=`${path}assets/img/items/${item.id}.png` alt=`${item.title}`>
         </div>
         <div class="card__info">
