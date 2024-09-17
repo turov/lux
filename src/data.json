@@ -19,7 +19,7 @@
     "category": "Coffee",
     "subcategory": "Brewing",
     "id": "EX-EM206D",
-    "title": "La Slimmissima Compact Espresso",
+    "title": "Nesso Espresso Compact Brewer",
     "additional": ["Dark Denim Collection"],
     "class": "dark-denim"
   },
@@ -51,7 +51,7 @@
     "category": "Coffee",
     "subcategory": "Brewing",
     "id": "EX-EM209",
-    "title": "La Slimmissima Compact Espresso",
+    "title": "Nesso Espresso Compact Brewer",
     "additional": ["Onix Black Collection"],
     "class": "onix-black"
   },
@@ -83,7 +83,7 @@
     "category": "Coffee",
     "subcategory": "Brewing",
     "id": "EX-EM208",
-    "title": "La Slimmissima Compact Espresso",
+    "title": "Nesso Espresso Compact Brewer",
     "additional": ["Stainless Steel Collection"],
     "class": "steel"
   },
