@@ -368,16 +368,7 @@
 
     .desktop-header__menu-item {
         font-weight: 400;
-        padding: 12px 16px;
-        max-width: 210px;
         margin-bottom: 12px;
-        background: transparent;
-        transition: all 0.8s;
-        border-radius: 28px;
-
-        &:hover {
-            background: var(--color-grey);
-        }
     }
 
     .desktop-header__menu-divider {
@@ -400,11 +391,8 @@
         }
     }
 
-    .desktop-header__menu-item:nth-child(1)  {
+    .desktop-header__menu-item:nth-child(1) .desktop-header__menu-link {
         font-weight: 600;
-        /*padding-bottom: 48px;*/
-        /*position: relative;*/
-        /*margin-bottom: 0;*/
 
         &:hover {
             background: var(--color-blue-tint);
@@ -414,6 +402,15 @@
     .desktop-header__menu-link {
         display: flex;
         align-items: center;
+        border-radius: 28px;
+        padding: 12px 16px;
+        max-width: 210px;
+        background: transparent;
+        transition: all 0.8s;
+
+        &:hover {
+            background: var(--color-grey);
+        }
 
         span {
             margin-left: 8px;

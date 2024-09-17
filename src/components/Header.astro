@@ -41,15 +41,8 @@ const { isMain } = Astro.props;
                     <li class="mobile-header__nav-submenu">
                         <ul class="mobile-header__nav-sublist">
                             <li class="mobile-header__nav-subitem">
-                                <a href=`${path}cooking#ovens` class="mobile-header__nav-sublink">
-                                    Ovens
-                                    <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                                         height="10" alt="">
-                                </a>
-                            </li>
-                            <li class="mobile-header__nav-subitem">
-                                <a href=`${path}cooking#airFryers` class="mobile-header__nav-sublink">
-                                    Air Fryers
+                                <a href=`${path}cooking#airFryers&Ovens` class="mobile-header__nav-sublink">
+                                    Air Fryers & Ovens
                                     <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                                          height="10" alt="">
                                 </a>
@@ -74,9 +67,9 @@ const { isMain } = Astro.props;
 
 
                     <li class="mobile-header__nav-item mobile-header__nav-item--catalog">
-                        <a href=`${path}preparation` class="mobile-header__nav-link mobile-header__nav-link--catalog">
+                        <a href=`${path}performance-blending` class="mobile-header__nav-link mobile-header__nav-link--catalog">
                             <img src=`${path}assets/img/mixer-icon.svg` width="22" height="22" alt="">
-                            <span>Preparation</span>
+                            <span>Performance Blending</span>
                             <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                                  height="10" alt="">
                         </a>
@@ -85,15 +78,15 @@ const { isMain } = Astro.props;
                     <li class="mobile-header__nav-submenu">
                         <ul class="mobile-header__nav-sublist">
                             <li class="mobile-header__nav-subitem">
-                                <a href=`${path}preparationg#blenders` class="mobile-header__nav-sublink">
+                                <a href=`${path}performance-blending#blenders` class="mobile-header__nav-sublink">
                                     Blenders
                                     <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                                          height="10" alt="">
                                 </a>
                             </li>
                             <li class="mobile-header__nav-subitem">
-                                <a href=`${path}preparationg#mixers` class="mobile-header__nav-sublink">
-                                    Mixers
+                                <a href=`${path}performance-blending#foodPrep` class="mobile-header__nav-sublink">
+                                    Food Prep
                                     <img class="mobile-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                                          height="10" alt="">
                                 </a>
@@ -277,15 +270,8 @@ const { isMain } = Astro.props;
                 </li>
                 <li class="desktop-header__menu-divider"></li>
                 <li class="desktop-header__menu-item">
-                    <a href=`${path}cooking#ovens` class="desktop-header__menu-link">
-                        Ovens
-                        <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
-                             height="10" alt="">
-                    </a>
-                </li>
-                <li class="desktop-header__menu-item">
-                    <a href=`${path}cooking#airFryers` class="desktop-header__menu-link">
-                        Air Fryers
+                    <a href=`${path}cooking#airFryers&Ovens` class="desktop-header__menu-link">
+                        Air Fryers & Ovens
                         <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                              height="10" alt="">
                     </a>
@@ -309,24 +295,24 @@ const { isMain } = Astro.props;
 
             <ul class="desktop-header__menu-category">
                 <li class="desktop-header__menu-item">
-                    <a href=`${path}preparation` class="desktop-header__menu-link">
+                    <a href=`${path}performance-blending` class="desktop-header__menu-link">
                         <img src=`${path}assets/img/mixer-icon.svg` width="22" height="22" alt="">
-                        <span>Preparation</span>
+                        <span>Performance Blending</span>
                         <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                              height="10" alt="">
                     </a>
                 </li>
                 <li class="desktop-header__menu-divider"></li>
                 <li class="desktop-header__menu-item">
-                    <a href=`${path}preparation#blenders` class="desktop-header__menu-link">
+                    <a href=`${path}performance-blending#blenders` class="desktop-header__menu-link">
                         Blenders
                         <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                              height="10" alt="">
                     </a>
                 </li>
                 <li class="desktop-header__menu-item">
-                    <a href=`${path}preparation#mixers` class="desktop-header__menu-link">
-                        Mixers
+                    <a href=`${path}performance-blending#foodPrep` class="desktop-header__menu-link">
+                        Food Prep
                         <img class="desktop-header__chevron" src=`${path}assets/img/chevron.svg` width="5"
                              height="10" alt="">
                     </a>

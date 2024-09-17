@@ -6,7 +6,6 @@ const categories = mobileHeader.querySelectorAll(".mobile-header__nav-item--cata
 const desktopHeader = document.querySelector(".desktop-header");
 const desktopProductsLink = desktopHeader.querySelector(".desktop-header__main-item--products");
 
-
 openButton.onclick = function (e)  {
     e.preventDefault();
     mobileHeader.classList.add("mobile-header--opened")
