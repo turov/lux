@@ -11,6 +11,7 @@
 
 .card:not(.card--collection):hover {
     background: var(--color-blue-tint);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .card__container {
@@ -66,7 +67,7 @@
     font-size: 24px;
     z-index: 2;
     position: relative;
-    background: var(--color-white);
+    /*background: var(--color-white);*/
     transition: all 0.4s ease;
 
     h3 {
@@ -77,9 +78,9 @@
     }
 }
 
-.card--collection:hover .card__info {
-    background: var(--color-blue-tint);
-}
+/*.card:hover .card__info {*/
+/*    background: var(--color-blue-tint);*/
+/*}*/
 
 /*.card--collection .card__info {*/
 /*    color: var(--color-white);*/

@@ -4,7 +4,7 @@ const {item} = Astro.props;
 ---
 
 <li>
-    <a class={item.class ? `card card--collection card--${item.class}` : "card"}
+    <a class="card"
        href={`${path}${item.id}`}>
         <div class="card__container">
             <span class="card__collection">{item.additional}</span>
