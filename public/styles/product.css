@@ -1,14 +1,10 @@
 .product--slide {
-    /*background: #C92C25;*/
+
 }
 
 .product__image {
-    /*width: 100%;*/
-
-    /*height: auto;*/
     width: 200px;
     height: 200px;
-
     margin: 10px auto;
     display: block;
 }
