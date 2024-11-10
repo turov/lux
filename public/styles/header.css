@@ -257,6 +257,45 @@
     }
 }
 
+.partners-block {
+    display: flex;
+
+    img {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 1024px) {
+    .partners-block {
+        margin-top: auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 0 20px !important;
+
+        a {
+            padding: 8px 12px !important;
+        }
+
+        a.cemglobal {
+            border: none !important;
+        }
+    }
+}
+
+@media (max-width: 525px) {
+    .partners-block {
+        padding: 0 10px !important;
+
+        a {
+            padding: 4px 8px !important;
+        }
+
+        a.cemglobal {
+            border: none !important;
+        }
+    }
+}
+
 @media (min-width: 1024px) {
     .mobile-header {
         display: none;

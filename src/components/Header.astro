@@ -127,56 +127,46 @@ const { isMain } = Astro.props;
                     </li>
                 </ul>
             </nav>
-            <ul class="mobile-header__partner-list">
-                <li class="mobile-header__partner-item">
-                    <a href="https://cemglobal.com/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/cemglobal.png` width="104" height="39" alt="cemglobal">
+            <!-- partners block -->
+            <div class="partners-block" style="background-color: black; padding: 0 80px; justify-content: space-between; align-items: center">
+                <div style="display: flex; justify-content: center; gap: 16px; align-items: center; padding-top: 8px; padding-bottom: 8px;">
+                    <a href="https://cemglobal.com/" class="cemglobal" style="color: white; padding-right: 16px; border-right: 2px solid white; display: flex; justify-content: center; align-items: center">
+                        <img src=`${path}assets/partners/cemglobal.png` style="height: 28px; width: fit-content" alt="cemglobal">
                     </a>
-                </li>
-                <!--<li class="mobile-header__partner-item">-->
-                <!--    <a href="#" class="mobile-header__partner-link">-->
-                <!--        <img src=`${path}assets/partners/electrolux.png` width="93" height="22" alt="Electrolux">-->
-                <!--    </a>-->
-                <!--</li>-->
-                <li class="mobile-header__partner-item">
-                    <a href="https://cemglobalfw.com/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/farberware.png` width="88" height="33" alt="Farberware">
-                    </a>
-                </li>
-                <li class="mobile-header__partner-item">
-                    <a href="https://continental.one/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/continental.png` width="88" height="33" alt="Continental">
-                    </a>
-                </li>
-                <li class="mobile-header__partner-item">
-                    <a href="https://www.collezioni.com/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/collezioni.png` width="88" height="33" alt="Collezioni">
-                    </a>
-                </li>
-                <li class="mobile-header__partner-item">
-                    <a href="https://proseries.one/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/proseries.png` width="88" height="33"
-                             alt="Professional Series">
-                    </a>
-                </li>
-                <li class="mobile-header__partner-item">
-                    <a href="https://ceconsumer.com/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/consumerelectronics.png` width="88" height="33"
-                             alt="Consumer Electronics">
-                    </a>
-                </li>
-                <li class="mobile-header__partner-item">
-                    <a href="https://americanoutdoors.life/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/americanoutdoors.png` width="88" height="33"
-                             alt="American Outdoors">
-                    </a>
-                </li>
-                <li class="mobile-header__partner-item">
-                    <a href="https://gymmaster.fitness/" class="mobile-header__partner-link">
-                        <img src=`${path}assets/partners/gymmaster.png` width="88" height="33" alt="Gym Master">
-                    </a>
-                </li>
-            </ul>
+                </div>
+
+                <a href="https://www.electroluxcollection.com/" style="padding: 24px 12px; color: white; display: inline-flex; align-items: center; justify-content: center">
+                    <img src=`${path}assets/partners/electrolux-white.svg` alt="Electrolux" style="width: 96px;">
+                </a>
+
+                <a href="https://cemglobalfw.com/" style="padding: 24px 12px; color: white; display: inline-flex; align-items: center; justify-content: center">
+                    <img src=`${path}assets/partners/farberware-white.svg` alt="Farberware" style="width: 96px;">
+                </a>
+
+                <a href="https://Continental.one" style="color: white; display: inline-flex; align-items: center; padding: 16px 12px; justify-content: center">
+                    <img src=`${path}assets/partners/continental-white.svg` style="width: 128px;" alt="Continental">
+                </a>
+
+                <a href="https://collezioni.com/" style="padding: 24px 12px; color: white; display: inline-flex; align-items: center; justify-content: center">
+                    <img src=`${path}assets/partners/collezioni.png` style="width: 96px;" alt="Collezioni">
+                </a>
+
+                <a href="https://ProSeries.one" style="color: white; display: inline-flex; align-items: center; padding: 16px 12px; justify-content: center">
+                    <img src=`${path}assets/partners/proseries-white.svg` style="width: 80px;" alt="Professional Series">
+                </a>
+
+                <a href="https://ceconsumer.com/" style="color: white; display: inline-flex; align-items: center; padding: 16px 10px; justify-content: center">
+                    <img src=`${path}assets/partners/consumerelectronics.png` style="width: 88px;" alt="Consumer Electronics">
+                </a>
+
+                <a href="http://americanoutdoors.life/" style="padding: 24px 12px; align-self: stretch; display: inline-flex; align-items: center; justify-content: center">
+                    <img src=`${path}assets/partners/americanoutdoors.png` style="width: 80px;" alt="American Outdoors">
+                </a>
+
+                <a href="https://GymMaster.Fitness" style="color: white; display: inline-flex; align-items: center; padding: 16px 12px; justify-content: center">
+                    <img src=`${path}assets/partners/gymmaster-white.svg` style="width: 112px;" alt="Gym Master">
+                </a>
+            </div>
         </div>
         <button type="button" class="mobile-header__close-button">
         </button>
@@ -184,59 +174,48 @@ const { isMain } = Astro.props;
 </header>
 
 <header class={isMain === true ? `desktop-header` : `desktop-header headerNotMain`} id="desktopHeader">
-    <div class="desktop-header__partners">
-        <ul class="desktop-header__partner-list">
-            <li class="desktop-header__partner-item">
-                <a href="https://cemglobal.com/"  class="desktop-header__partner-link" style="opacity: 1">
-                    <img src=`${path}assets/partners/cemglobal.png` width="104" height="39" alt="cemglobal">
+    <!-- partners block -->
+    <div>
+        <div class="partners-block" style="background-color: black; padding: 0 80px; justify-content: space-between; align-items: center">
+            <div style="display: flex; justify-content: center; gap: 16px; align-items: center; padding-top: 8px; padding-bottom: 8px;">
+                <a href="https://cemglobal.com/" style="color: white; padding-right: 16px; border-right: 2px solid white; display: flex; justify-content: center; align-items: center">
+                    <img src=`${path}assets/partners/cemglobal.png` style="height: 32px;" alt="cemglobal">
                 </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a class="desktop-header__partner-link" style="opacity: 1">
-                    <img src=`${path}assets/partners/electrolux.png` width="93" height="22" alt="Electrolux">
-                </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a href="https://cemglobalfw.com/" class="desktop-header__partner-link">
-                    <img src=`${path}assets/partners/farberware.png` width="88" height="33" alt="Farberware">
-                </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a href="https://continental.one/" class="desktop-header__partner-link">
-                    <img src=`${path}assets/partners/continental.png` width="88" height="33" alt="Continental">
-                </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a href="https://www.collezioni.com/" class="desktop-header__partner-link">
-                    <img src=`${path}assets/partners/collezioni.png` width="88" height="33" alt="Collezioni">
-                </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a href="https://proseries.one/" class="desktop-header__partner-link">
-                    <img src=`${path}assets/partners/proseries.png` width="88" height="33"
-                         alt="Professional Series">
-                </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a href="https://ceconsumer.com/" class="desktop-header__partner-link">
-                    <img src=`${path}assets/partners/consumerelectronics.png` width="88" height="33"
-                         alt="Consumer Electronics">
-                </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a href="https://americanoutdoors.life/" class="desktop-header__partner-link">
-                    <img src=`${path}assets/partners/americanoutdoors.png` width="88" height="33"
-                         alt="American Outdoors">
-                </a>
-            </li>
-            <li class="desktop-header__partner-item">
-                <a href="https://gymmaster.fitness/" class="desktop-header__partner-link">
-                    <img src=`${path}assets/partners/gymmaster.png` width="88" height="33" alt="Gym Master">
-                </a>
-            </li>
-        </ul>
-    </div>
+            </div>
 
+            <a href="https://www.electroluxcollection.com/" style="padding: 24px 12px; color: white; display: inline-flex; align-items: center; justify-content: center">
+                <img src=`${path}assets/partners/electrolux-white.svg` alt="Electrolux" style="width: 96px;">
+            </a>
+
+            <a href="https://cemglobalfw.com/" style="padding: 24px 12px; color: white; display: inline-flex; align-items: center; justify-content: center">
+                <img src=`${path}assets/partners/farberware-white.svg` alt="Farberware" style="width: 96px;">
+            </a>
+
+            <a href="https://Continental.one" style="color: white; display: inline-flex; align-items: center; padding: 16px 12px; justify-content: center">
+                <img src=`${path}assets/partners/continental-white.svg` style="width: 128px;" alt="Continental">
+            </a>
+
+            <a href="https://collezioni.com/" style="padding: 24px 12px; color: white; display: inline-flex; align-items: center; justify-content: center">
+                <img src=`${path}assets/partners/collezioni.png` style="width: 96px;" alt="Collezioni">
+            </a>
+
+            <a href="https://ProSeries.one" style="color: white; display: inline-flex; align-items: center; padding: 16px 12px; justify-content: center">
+                <img src=`${path}assets/partners/proseries-white.svg` style="width: 80px;" alt="Professional Series">
+            </a>
+
+            <a href="https://ceconsumer.com/" style="color: white; display: inline-flex; align-items: center; padding: 16px 10px; justify-content: center">
+                <img src=`${path}assets/partners/consumerelectronics.png` style="width: 88px;" alt="Consumer Electronics">
+            </a>
+
+            <a href="http://americanoutdoors.life/" style="padding: 24px 12px; align-self: stretch; display: inline-flex; align-items: center; justify-content: center">
+                <img src=`${path}assets/partners/americanoutdoors.png` style="width: 80px;" alt="American Outdoors">
+            </a>
+
+            <a href="https://GymMaster.Fitness" style="color: white; display: inline-flex; align-items: center; padding: 16px 12px; justify-content: center">
+                <img src=`${path}assets/partners/gymmaster-white.svg` style="width: 112px;" alt="Gym Master">
+            </a>
+        </div>
+    </div>
     <div class="desktop-header__main">
         <div class="desktop-header__main-container">
             <span class="desktop-header__main-item desktop-header__main-item--products">
